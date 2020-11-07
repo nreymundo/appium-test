@@ -1,3 +1,5 @@
+package standalone;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
@@ -16,6 +18,7 @@ public class AppTest {
     //Where the Appium server is running. Localhost in this case.
     private final static String SERVER_URL = "http://127.0.0.1:4723/wd/hub";
     private final static String APP_BUNDLE_ID = "com.afollestad.materialdialogssample";
+    private final static String APPT_TO_DEPLOY = "https://github.com/afollestad/material-dialogs/raw/main/sample/sample.apk";
 
     private AndroidDriver<MobileElement> driver;
 
@@ -31,7 +34,7 @@ public class AppTest {
         //Automation engine to use. Appium is the default if this isn't specified.
         capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "Appium");
         //The driver will try to install this application when initiated. Can be a URL or relative/absolute path on the filesystem.
-        capabilities.setCapability(MobileCapabilityType.APP, "https://github.com/afollestad/material-dialogs/raw/main/sample/sample.apk");
+        capabilities.setCapability(MobileCapabilityType.APP, APPT_TO_DEPLOY);
         //This will reset the app state after the session ends (so.. after this class finishes running? ¯\_(ツ)_/¯). Default = false.
         capabilities.setCapability(MobileCapabilityType.NO_RESET, "false");
         //This one will do the same as above but go the extra mile and also uninstall the application. Default = false.

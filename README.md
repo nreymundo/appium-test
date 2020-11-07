@@ -47,3 +47,9 @@ Start Appium server
 Run the tests: 
 * Straight from the command line with `mvn test`
 * Import the project into an IDE and run it through there. 
+
+Run the tests with Karate:
+* Make sure the Appium server is started. 
+* I had some issues if I didn't run `mvn clean verify` beforehand. Weird. Note: this will run the TestNG tests. 
+* Using Intellij look up and install the plugin `Cucumber for Java`. That will also install the `Gherkin` plugin. 
+* Right click on the feature file -> `Run Feature...`
