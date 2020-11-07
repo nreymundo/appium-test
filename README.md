@@ -50,6 +50,7 @@ Run the tests:
 
 Run the tests with Karate:
 * Make sure the Appium server is started. 
+* Also make sure the emulated device its trying to use matches the name of one defined on your system. 
 * I had some issues if I didn't run `mvn clean verify` beforehand. Weird. Note: this will run the TestNG tests. 
 * Using Intellij look up and install the plugin `Cucumber for Java`. That will also install the `Gherkin` plugin. 
 * Right click on the feature file -> `Run Feature...`
