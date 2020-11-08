@@ -1,1 +1,8 @@
 language: java
+
+addons:
+  browserstack:
+    username: "nicolasreymundo1"
+    access_key:
+      secure: "JCTlOxX23TOUdsZT8IoGZBF67S/5CFtxP+yKseQYVhj8rdX1kKPbx6P9H3HELldk1KM3DPGHP7NYPIwgYxUoSfAoJ/z4ZyOWgX2lgwdC0PZLgp/G82hG5OSBDlCSJ8NQ/jXWr8Wak+iY/hZZ8ZJBXVrY6IgHDOPVFQWsZuLCwzKx2RuEe4mBKO12JoUX6JbaIDZw9PwJVCRealszZCUUjlkv2lxbirfp84q0w56XFVKux4MkNouim8P9j9YnSI4k5K5zQxf01NW0l+2JYJKZu4SSyWZRyxqS1pV/DV8heslYoGcayBfL3smf1HPm3pSRXS8kXxUQ41wwuLCW0619S12l+dqcuvWxru2FcuFOzPWozoAps6xYEkg3ExY1yEnGgfadutvjIki4qdgAncr21+5eEiPphF+h+Dz6LyYGhjHbLUdONRoWuJrXJXtBI6qkFt7cIuZSvcSbIRXOZN+ayu26HMZoAijxH76dZTDB9XC1OcVFL3PFp1VuVrO3mdufbO1EEN8+Fh0QK4gmrBHEGeJFaAPCeYtpgIspl/Sfit8JPb07FnEu/0MRnFeI1DQ31iVDT7YQ5OH5NNQxcq5vgq8FDgUuVreffD3ZUM6w9lOUcqMUrkhCImMWzCTUNszIy9sCBaiYZK/Pe+P4aA0/Tq266dxr+136yctO2OZMIJ8="
+    app_path: "./resources/sample.apk"
